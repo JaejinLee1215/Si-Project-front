@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import InputBox from './components/InputBox/InputBox';
-import Login from './components/Login/Login';
-import Join from './components/Login/Join';
+import InputBox from './components/search/Search';
+import Login from './components/login/Login';
+import Join from './components/login/Join';
 import './App.css';
 
 const App = () => {

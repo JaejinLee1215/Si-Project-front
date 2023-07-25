@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './InputBox.css';
+import './Search.css';
 import { Link } from 'react-router-dom';
 
 const InputBox = () => {
