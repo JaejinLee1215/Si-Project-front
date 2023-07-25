@@ -77,7 +77,7 @@
 
 .input-box button:hover {
   background: #42a038;
-  color: #433d3d;
+  color: #ffffff;
   border-radius: 5px;
   box-shadow: 0 0 5px #42a038, 0 0 25px #42a038, 0 0 50px #42a038, 0 0 100px #42a038;
 }
@@ -114,6 +114,7 @@
   animation: btn-anim2 1s linear infinite;
   animation-delay: 0.25s;
 }
+
 
 @keyframes btn-anim2 {
   0% {

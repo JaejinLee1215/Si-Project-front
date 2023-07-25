@@ -8,7 +8,9 @@ const Login = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    // 여기에 로그인 처리 로직을 추가할 수 있습니다.
+    
+    // 로그인 처리 로직 추가
+    
     console.log('Username:', username);
     console.log('Password:', password);
   };

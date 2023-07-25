@@ -15,8 +15,8 @@ const InputBox = () => {
   };
 
   return (
-    <div className="input-box"> {/* Apply the shared CSS class */}
-      <h2>어떤 사건이 궁금하신가요</h2>
+    <div className="input-box">
+      <h2>어떤 사건이 궁금하신가요?</h2>
       <input
         type="text"
         value={inputValue}
