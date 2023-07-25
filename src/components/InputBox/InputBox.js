@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './InputBox.css';
 import { Link } from 'react-router-dom';
 
-
 const InputBox = () => {
   const [inputValue, setInputValue] = useState('');
   const [outputValue, setOutputValue] = useState('');
@@ -16,7 +15,7 @@ const InputBox = () => {
   };
 
   return (
-    <div>
+    <div className="input-box"> {/* Apply the shared CSS class */}
       <h2>어떤 사건이 궁금하신가요</h2>
       <input
         type="text"
