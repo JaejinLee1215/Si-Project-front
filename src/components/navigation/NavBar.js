@@ -1,12 +1,13 @@
 import React from 'react';
 import './NavBar.css';
+import HomeIcon from '@mui/icons-material/AccessAlarm';
 
 const NavBar = () => {
   return (
-    <div>
+    <div class="nav-bg-container">
       <nav id="primary_nav_wrap">
         <ul>
-          <li className="current-menu-item"><a href="/">Home</a></li>
+          <li><HomeIcon fontSize="large" /></li>
           <li><a href="/">유사 사례 찾기</a></li>
           <li><a href="/">우리 동네 변호사</a></li>
           <li><a href="/">변호사 상담 신청</a></li>
