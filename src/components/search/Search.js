@@ -1,35 +1,31 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Search.css';
-import { Link } from 'react-router-dom';
 
-const InputBox = () => {
-  const [inputValue, setInputValue] = useState('');
-  const [outputValue, setOutputValue] = useState('');
+const SearchBar = () => {
+  const handleSearchSubmit = (event) => {
+    event.preventDefault();
+    const searchText = event.target.querySelector('input[type="text"]').value.trim();
 
-  const handleChange = (e) => {
-    setInputValue(e.target.value);
-  };
-
-  const handleConfirm = () => {
-    setOutputValue(inputValue);
+    console.log("검색어: ", searchText);
   };
 
   return (
-    <div className="input-box">
-      <h2>어떤 사건이 궁금하신가요?</h2>
-      <input
-        type="text"
-        value={inputValue}
-        onChange={handleChange}
-        placeholder="입력창"
-      />
-      <button onClick={handleConfirm}>확인</button>
-      <div>
-        <p>입력한 값: {outputValue}</p>
-        <Link to="/login">로그인 페이지로 이동</Link>
-      </div>
+    <div className="search-cover">
+      <form className="search-form" method="get" action="" onSubmit={handleSearchSubmit}>
+        <div className="search-input-container">
+          <div className="search-td">
+            <input type="text" placeholder="Search" required onInvalid={(e) => e.preventDefault()} />
+          </div>
+          <div className="search-td search-s-cover">
+            <button className="search-button" type="submit">
+              <div className="search-s-circle"></div>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </form>
     </div>
   );
-};
+}
 
-export default InputBox;
+export default SearchBar;

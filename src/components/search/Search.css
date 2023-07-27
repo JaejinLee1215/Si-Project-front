@@ -1,165 +1,126 @@
+.search-input-container {
+  display: table;
+  width: 100%;
+}
 
-.input-box {
+.search-input-container .search-td {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.search-input-container input[type="text"] {
+  width: 100%;
+  height: 96px;
+  font-size: 50px;
+  line-height: 1;
+  border: none;
+}
+
+.search-cover {
   position: absolute;
   top: 50%;
-  left: 50%;
-  width: 400px;
-  padding: 40px;
-  transform: translate(-50%, -50%);
-  background: rgba(254, 255, 251, 0.941);
-  box-sizing: border-box;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
-  border-radius: 10px;
-}
-
-.input-box h2 {
-  margin: 0 0 30px;
-  padding: 0;
-  color: #433d3d;
-  text-align: center;
-}
-
-.input-box input {
-  width: 100%;
-  padding: 10px 0;
-  font-size: 16px;
-  color: #433d3d;
-  margin-bottom: 30px;
-  border: none;
-  border-bottom: 1px solid #433d3d;
-  outline: none;
-  background: transparent;
-}
-
-.input-box label {
-  position: absolute;
-  top: 0;
   left: 0;
-  padding: 10px 0;
-  font-size: 16px;
-  color: #433d3d;
-  pointer-events: none;
-  transition: 0.5s;
+  right: 0;
+  width: 1000px;
+  padding: 30px;
+  margin: -150px auto 0 auto;
+  background-color: transparent;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1), 0 0 0 20px rgba(232, 232, 232, 0.92);
+  transform: scale(0.6);
 }
 
-.input-box input:focus ~ label,
-.input-box input:valid ~ label {
-  top: -20px;
-  left: 0;
-  color: #42a038;
-  font-size: 12px;
+.search-form {
+  height: 96px;
 }
 
-.input-box button {
+.search-s-cover {
+  width: 1px;
+  padding-left: 35px;
+  background-color: transparent;
+}
+
+.search-button {
   position: relative;
   display: block;
-  width: 100%;
-  padding: 10px 20px;
-  color: #42a038;
-  font-size: 16px;
-  text-decoration: none;
-  text-transform: uppercase;
-  overflow: hidden;
-  transition: 0.5s;
-  margin-top: 40px;
-  letter-spacing: 4px;
-  border: none;
-  background: transparent;
+  width: 84px;
+  height: 96px;
+  background-color: #fff;
   cursor: pointer;
-  outline: none;
+  border: none;
 }
 
-.input-box button a {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.input-box button:hover {
-  background: #42a038;
-  color: #ffffff;
-  border-radius: 5px;
-  box-shadow: 0 0 5px #42a038, 0 0 25px #42a038, 0 0 50px #42a038, 0 0 100px #42a038;
-}
-
-.input-box a span {
-  position: absolute;
-  display: block;
-}
-
-.input-box a span:nth-child(1) {
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, #42a038);
-  animation: btn-anim1 1s linear infinite;
-}
-
-@keyframes btn-anim1 {
-  0% {
-    left: -100%;
-  }
-  50%, 100% {
-    left: 100%;
-  }
-}
-
-.input-box a span:nth-child(2) {
-  top: -100%;
-  right: 0;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(180deg, transparent, #42a038);
-  animation: btn-anim2 1s linear infinite;
-  animation-delay: 0.25s;
-}
-
-
-@keyframes btn-anim2 {
-  0% {
-    top: -100%;
-  }
-  50%, 100% {
-    top: 100%;
-  }
-}
-
-.input-box a span:nth-child(3) {
-  bottom: 0;
-  right: -100%;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(270deg, transparent, #42a038);
-  animation: btn-anim3 1s linear infinite;
-  animation-delay: 0.5s;
-}
-
-@keyframes btn-anim3 {
-  0% {
-    right: -100%;
-  }
-  50%, 100% {
-    right: 100%;
-  }
-}
-
-.input-box a span:nth-child(4) {
-  bottom: -100%;
+.search-s-circle {
+  position: relative;
+  top: -8px;
   left: 0;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(360deg, transparent, #42a038);
-  animation: btn-anim4 1s linear infinite;
-  animation-delay: 0.75s;
+  width: 43px;
+  height: 43px;
+  margin-top: 0;
+  border-width: 15px;
+  border: 15px solid #d6d6d6;
+  background-color: transparent;
+  border-radius: 50%;
+  transition: 0.5s ease all;
 }
 
-@keyframes btn-anim4 {
-  0% {
-    bottom: -100%;
-  }
-  50%, 100% {
-    bottom: 100%;
-  }
+.search-button span {
+  position: absolute;
+  top: 68px;
+  left: 43px;
+  display: block;
+  width: 45px;
+  height: 15px;
+  background-color: transparent;
+  border-radius: 10px;
+  transform: rotateZ(52deg);
+  transition: 0.5s ease all;
 }
 
+.search-button span:before,
+.search-button span:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 45px;
+  height: 15px;
+  background-color: #d6d6d6;
+  border-radius: 10px;
+  transform: rotateZ(0);
+  transition: 0.5s ease all;
+}
+
+.search-s-cover:hover .search-s-circle {
+  top: -1px;
+  width: 67px;
+  height: 15px;
+  border-width: 0;
+  background-color: #d6d6d6;
+  border-radius: 20px;
+}
+
+.search-s-cover:hover span {
+  top: 50%;
+  left: 56px;
+  width: 25px;
+  margin-top: -9px;
+  transform: rotateZ(0);
+}
+
+.search-s-cover:hover .search-button span:before {
+  bottom: 11px;
+  transform: rotateZ(52deg);
+}
+
+.search-s-cover:hover .search-button span:after {
+  bottom: -11px;
+  transform: rotateZ(-52deg);
+}
+
+.search-s-cover:hover .search-button span:before,
+.search-s-cover:hover .search-button span:after {
+  right: -6px;
+  width: 40px;
+  background-color: #d6d6d6;
+}

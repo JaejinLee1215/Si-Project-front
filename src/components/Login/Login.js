@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './Login.css'
+import './Login.css';
 
 const Login = () => {
   const [username, setUsername] = useState('');
@@ -8,15 +8,13 @@ const Login = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    
-    // 로그인 처리 로직 추가
-    
+
     console.log('Username:', username);
     console.log('Password:', password);
   };
 
   return (
-    <div className="login-box">
+    <div className="myapp-login-box">
       <h2>Login</h2>
       <form>
         <div className="user-box">
@@ -39,12 +37,16 @@ const Login = () => {
           />
           <label>Password</label>
         </div>
-        <button type="submit" onClick={handleLogin}>
+        <button className="myapp-submit-button" type="submit" onClick={handleLogin}>
           Submit
         </button>
       </form>
-      <p>아직 회원이 아니신가요? <Link to="/join">회원가입 페이지로 이동</Link></p>
-      <p><Link to='/'>Home</Link></p>
+      <p>
+        아직 회원이 아니신가요? <Link to="/join">회원가입 페이지로 이동</Link>
+      </p>
+      <p>
+        <Link to="/">Home</Link>
+      </p>
     </div>
   );
 };

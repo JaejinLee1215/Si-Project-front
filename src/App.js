@@ -1,9 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import InputBox from './components/search/Search';
 import Login from './components/login/Login';
 import Join from './components/login/Join';
-import NavigationBar from './components/navigation/NavBar';
+import Home from './components/main/home';
 import './App.css';
 
 const App = () => {
@@ -11,8 +10,7 @@ const App = () => {
     <Router>
       <div>
         <Routes>
-          <Route path="/" element={<NavigationBar />} />
-          <Route path="/search" element={<InputBox />} />
+          <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/join" element={<Join />} />
         </Routes>
