@@ -1,12 +1,16 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Search.css';
 
 const SearchBar = () => {
+  const navigate = useNavigate();
+
   const handleSearchSubmit = (event) => {
     event.preventDefault();
     const searchText = event.target.querySelector('input[type="text"]').value.trim();
 
     console.log("검색어: ", searchText);
+    navigate("/login", { state: { searchText } });
   };
 
   return (
@@ -26,6 +30,6 @@ const SearchBar = () => {
       </form>
     </div>
   );
-}
+};
 
 export default SearchBar;
