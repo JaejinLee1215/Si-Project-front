@@ -7,7 +7,9 @@ const NavBar = () => {
     <div class="nav-bg-container">
       <nav id="primary_nav_wrap">
         <ul>
-          <li><HomeIcon fontSize="large" /></li>
+          <a href='/'>
+          <li><HomeIcon fontSize="large" style={{ color:'#6AAF5F' }}/></li>
+          </a>
           <li><a href="/">유사 사례 찾기</a></li>
           <li><a href="/">우리 동네 변호사</a></li>
           <li><a href="/">변호사 상담 신청</a></li>

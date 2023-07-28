@@ -60,7 +60,7 @@
   height: 43px;
   margin-top: 0;
   border-width: 15px;
-  border: 15px solid #d6d6d6;
+  border: 15px solid #6AAF5F;
   background-color: transparent;
   border-radius: 50%;
   transition: 0.5s ease all;
@@ -87,7 +87,7 @@
   right: 0;
   width: 45px;
   height: 15px;
-  background-color: #d6d6d6;
+  background-color: #6AAF5F;
   border-radius: 10px;
   transform: rotateZ(0);
   transition: 0.5s ease all;
@@ -98,7 +98,7 @@
   width: 67px;
   height: 15px;
   border-width: 0;
-  background-color: #d6d6d6;
+  background-color: #6AAF5F;
   border-radius: 20px;
 }
 
@@ -124,5 +124,5 @@
 .search-s-cover:hover .search-button span:after {
   right: -6px;
   width: 40px;
-  background-color: #d6d6d6;
+  background-color: #6AAF5F;
 }
