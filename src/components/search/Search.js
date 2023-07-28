@@ -18,7 +18,7 @@ const SearchBar = () => {
       <form className="search-form" method="get" action="" onSubmit={handleSearchSubmit}>
         <div className="search-input-container">
           <div className="search-td">
-            <input type="text" placeholder="Search" required onInvalid={(e) => e.preventDefault()} />
+          <input type="text" placeholder="search" required onInvalid={(e) => e.preventDefault()} style={{ outline: "none", border: "none" }} />
           </div>
           <div className="search-td search-s-cover">
             <button className="search-button" type="submit">
