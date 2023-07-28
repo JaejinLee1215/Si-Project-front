@@ -1,6 +1,6 @@
 import React from 'react';
 import './NavBar.css';
-import HomeIcon from '@mui/icons-material/AccessAlarm';
+import HomeIcon from '@mui/icons-material/Home';
 
 const NavBar = () => {
   return (

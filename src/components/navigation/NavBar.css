@@ -7,12 +7,13 @@
   
   #primary_nav_wrap {
     margin-top: 15px;
+    position: relative; /* position 속성 추가 */
+    right: -10px; /* 원하는 만큼의 오른쪽 여백 설정 */
   }
   
   #primary_nav_wrap ul {
     list-style: none;
     position: relative;
-    float: left;
     margin: 0;
     padding: 0;
   }
