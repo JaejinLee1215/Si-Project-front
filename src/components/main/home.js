@@ -3,6 +3,7 @@ import './home.css';
 import NavBar from '../navigation/NavBar';
 import Search from '../search/Search';
 import Category from '../category/Category';
+import Info from '../footer/Info';
 
 const Home = () => {
     return (
@@ -10,6 +11,7 @@ const Home = () => {
             <NavBar />
             <Search />
             <Category />
+            <Info />
         </div>
     )
 }
