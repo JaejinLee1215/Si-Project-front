@@ -33,9 +33,7 @@ const Category = () => {
             cursor: 'pointer',
           }}
         >
-          <Typography variant="h6" sx={{ fontSize: '20px' }}>
-            이혼😵‍💫
-          </Typography>
+          <Typography variant="h6" sx={{ fontSize: '20px', color: '#6E6E6E' }}>이혼😵‍💫</Typography>
         </Paper>
       </Link>
       <Link to="/login" style={{ textDecoration: 'none' }}>
@@ -55,7 +53,7 @@ const Category = () => {
             cursor: 'pointer',
           }}
         >
-          <Typography variant="h6" sx={{ fontSize: '20px' }}>상속👦🏻</Typography>
+          <Typography variant="h6" sx={{ fontSize: '20px', color: '#6E6E6E' }}>상속👦🏻</Typography>
         </Paper>
       </Link>
     </Box>
