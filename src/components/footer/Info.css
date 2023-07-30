@@ -1,11 +1,9 @@
-/* YourComponent.css */
-
 .footer-container {
     width: 100%;
     margin: auto;
     margin-top: 200px;
     padding: 20px;
-    background-color: #727272;
+    background-color: #575757;
     overflow-x: hidden;
   }
 
