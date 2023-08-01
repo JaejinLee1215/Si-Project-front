@@ -6,7 +6,10 @@ import NavBar from './components/navigation/NavBar';
 import Home from './components/main/home'
 import Page1 from './components/page/page1';
 import Page2 from './components/page/page2';
-// import other page components as needed
+import Page3 from './components/page/page3';
+import Page4 from './components/page/page4';
+import Login from './components/login/Login';
+import Join from './components/login/Join';
 
 const App = () => {
   return (
@@ -17,6 +20,10 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/page1" element={<Page1 />} />
           <Route path="/page2" element={<Page2 />} />
+          <Route path='/page3' element={<Page3 />} />
+          <Route path='/page4' element={<Page4 />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/join' element={<Join />} />
         </Routes>
       </div>
     </Router>

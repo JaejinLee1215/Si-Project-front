@@ -30,7 +30,7 @@
   color: #433d3d;
   margin-bottom: 30px;
   border: none;
-  border-bottom: 1px solid #433d3d;
+  border-bottom: 1px solid #d8d8d8;
   outline: none;
   background: transparent;
 }
@@ -53,7 +53,7 @@
 .myapp-login-box .user-box input:valid ~ label {
   top: -20px;
   font-size: 12px;
-  color: #42a038;
+  color: #6AAF5F;
 }
 
 p {
@@ -65,7 +65,7 @@ p {
   display: block;
   width: 100%;
   padding: 10px 20px;
-  color: #42a038;
+  color: #6AAF5F;
   font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;
@@ -76,9 +76,9 @@ p {
 }
 
 .myapp-login-box form button:hover {
-  background: #42a038;
+  background: #6AAF5F;
   color: #ffffff;
   border-radius: 5px;
-  box-shadow: 0 0 5px #42a038, 0 0 25px #42a038, 0 0 50px #42a038, 0 0 100px #157A0A;
+  box-shadow:none;
 }
 
