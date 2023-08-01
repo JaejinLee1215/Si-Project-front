@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 import UserList from './components/UserList';
 import UserForm from './components/UserForm';
 import SearchForm from './components/SearchForm';
