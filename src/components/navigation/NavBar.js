@@ -1,23 +1,24 @@
+// src/components/navigation/NavBar.js
 import React from 'react';
 import './NavBar.css';
 import HomeIcon from '@mui/icons-material/Home';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   return (
-    <div class="nav-bg-container">
-      <nav id="primary_nav_wrap">
-        <ul>
-          <a href='/'>
-          <li><HomeIcon fontSize="large" style={{ color:'#6AAF5F' }}/></li>
-          </a>
-          <li><a href="/">유사 사례 찾기</a></li>
-          <li><a href="/">우리 동네 변호사</a></li>
-          <li><a href="/">변호사 상담 신청</a></li>
-        </ul>
-      </nav>
-      <div className="auth-buttons">
-        <a href="/login" className="login-btn">로그인</a>
-        <a href="/join" className="join-btn">회원가입</a>
+    <div className="nav-bg-container">
+      <div className="content">
+        <nav id="primary_nav_wrap">
+          <ul>
+            <li><Link to="/page1">page1</Link></li>
+            <li><Link to="/page2">page2</Link></li>
+            <a href='/'>
+            <li><HomeIcon fontSize="large" style={{ color: '#6AAF5F' }} /></li>
+            </a>
+            <li><Link to="/page3">page3</Link></li>
+            <li><Link to="/page4">page4</Link></li>
+          </ul>
+        </nav>
       </div>
     </div>
   );

@@ -13,7 +13,7 @@ const Category = () => {
         flexWrap: 'wrap',
         justifyContent: 'center',
         alignItems: 'center',
-        marginTop: '280px',
+        marginTop: '400px',
       }}
     >
       <Link to="/join" style={{ textDecoration: 'none' }}>
