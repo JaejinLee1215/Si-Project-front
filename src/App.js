@@ -37,6 +37,7 @@ function App() {
   return (
     <div>
       <h1>사용자와 사진</h1>
+      <h1>테스트</h1>
       <UserForm fetchUsers={loadUsers} />
       <h2>데이터 표시</h2>
       <SearchForm handleSearch={handleSearch} />
